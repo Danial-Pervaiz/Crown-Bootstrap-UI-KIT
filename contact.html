@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crown UI-KIT</title>
+    <meta name="description" content="Ray :: Bootstrap Skin">
+    <meta name="author" content="Media-City">
+    <link href="css/bootstrap.css" rel="stylesheet"> <!-- Bootstrap CSS--> 
+    <link href="css/project.css" rel="stylesheet"> <!-- Custom Bootstrap CSS-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" /> <!-- Font Awesome Css-->
+    <script src="js/jquery-latest.min.js"></script>  
+    <script type="text/javascript">
+    $(function () {
+      $(document).bind('contextmenu', function (e) {
+        e.preventDefault();
+        alert('Right Click is Not Allowed');
+      });
+
+     });
+ 	</script> <!-- Right Click Disable JS -->
+ 	<script>
+ 	document.onkeydown = function(e) {
+    if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 ||     e.keyCode === 117 || e.keycode === 17 || e.keycode === 85)) {//ctrl+u Alt+c, Alt+v will also be disabled sadly.
+        alert('Not Allowed');
+    }
+    return false;
+	};
+	</script> <!-- Ctrl+U Disable JS -->
+  </head>
+<body>
+  <!-- Top Navbar -->
+  <nav id="nav-container" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Crown UI-KIT</a>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">CSS</a></li>
+          <li><a href="components.html">Component</a></li>
+          <li><a href="javascripts.html">JavaScript</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Pages<span class="caret"></span></a>
+            <ul class="dropdown-menu">                       
+              <li><a href="landing.html">Landing Page</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="team.html">Our Team</a></li>            
+              <li role="separator" class="divider"></li>            
+              <li><a href="login.html">Login/Register</a></li>
+              <li><a href="contact.html">Contact Us</a></li>                
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>   
+  <!-- End Top Navbar -->
+
+  <!-- Top Header Bar -->
+  <div id="nav-container" class="top-header">
+    <div class="container-fluid">            
+      <h3>Contact</h3>
+    </div>
+  </div>
+  <!-- End Header -->
+
+  <!-- Contact -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="page-header col-md-12">
+          <h2>Contacts Us</h2>
+        </div>
+        <div class="contact col-md-5">
+          <div class="section-box">
+            <h4 class="section-box-title">Contact Form</h4>             
+            <form class="form-horizontal">             
+              <div class="form-group">
+                <label for="inputname" class="col-md-2 control-label">Name</label>
+                <div class="col-md-10">
+                  <input class="form-control" id="inputname" placeholder="Name" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputemail" class="col-md-2 control-label">Email</label>
+                <div class="col-md-10">
+                  <input class="form-control" id="inputemail" placeholder="Email" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputphone" class="col-md-2 control-label">Phone</label>
+                <div class="col-md-10">
+                  <input class="form-control" id="inputphone" placeholder="Phone" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="textArea" class="col-md-2 control-label">Message</label>
+                <div class="col-md-10">
+                  <textarea class="form-control" rows="3" id="textArea" placeholder="Your Comments"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-10 col-md-offset-2">
+                  <div class="checkbox">
+                      <label><input type="checkbox">Remember Me</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-9 col-md-offset-2">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="map col-md-6 col-md-offset-1">
+          <div class="section-box">
+            <div id='gmap_canvas' style='height:380px;width:520px;'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- End  -->
+
+    <!-- Contact-info -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="contact-details col-md-12 text-center">
+          <h3 class="section-heading">Get In Touch</h3>
+            <h4>Media City</h4>
+            <p><i class="fa fa-mobile fa-lg"></i>+91-00000-00000</p>
+            <p><i class="fa fa-phone fa-lg"></i>+91-1482-123456</p>
+            <p><i class="fa fa-envelope fa-lg"></i>info@mediacity.co.in</p>
+            <p><i class="fa fa-globe fa-lg"></i>www.mediacity.co.in</p>
+            <p><i class="fa fa-map-marker fa-lg"></i>Chechani Bhawan, Near Vishal Mega Mart, Bhilwara, Rajasthan - 311001, India</p>
+            <div class="stack-effect">
+              <a class="btn-social btn1-facebook" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn1-twitter" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="btn-social btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+              <a class="btn-social btn1-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div><!--  End -->
+
+  <!-- Footer -->
+  <div class="top-header">
+    <div class="container-fluid">            
+      <h5>&copy; 2016 Crown UI-KIT. | All Rights Reserve To Crown Technologies.</h5>
+    </div>
+  </div>
+  <!-- End Footer -->
+  
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>  <!-- Google Map JS -->
+<script src="js/skin.js"></script>  
+</body>
+
+</html>

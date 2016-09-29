@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ray :: Bootstrap Skin</title>
+    <meta name="description" content="Ray :: Bootstrap Skin">
+    <meta name="author" content="Media-City">
+    <link href="css/bootstrap.css" rel="stylesheet"> <!-- Bootstrap CSS--> 
+    <link href="css/project.css" rel="stylesheet"> <!-- Custom Bootstrap CSS--> 
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" /> <!-- Font Awesome Css-->
+    <script src="js/jquery-latest.min.js"></script>   
+    <script type="text/javascript">
+    $(function () {
+      $(document).bind('contextmenu', function (e) {
+        e.preventDefault();
+        alert('Right Click is Not Allowed');
+      });
+
+     });
+ 	</script> <!-- Right Click Disable JS -->
+ 	<script>
+ 	document.onkeydown = function(e) {
+    if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 ||     e.keyCode === 117 || e.keycode === 17 || e.keycode === 85)) {//ctrl+u Alt+c, Alt+v will also be disabled sadly.
+        alert('Not Allowed');
+    }
+    return false;
+	};
+	</script> <!-- Ctrl+U Disable JS -->
+  </head>
+<body>
+  <!-- Top Navbar -->
+  <nav id="nav-container" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Ray BootStrap Skin</a>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">CSS</a></li>
+          <li><a href="components.html">Component</a></li>
+          <li><a href="javascripts.html">JavaScript</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Pages<span class="caret"></span></a>
+            <ul class="dropdown-menu">                       
+              <li><a href="landing.html">Landing Page</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="team.html">Our Team</a></li>            
+              <li role="separator" class="divider"></li>            
+              <li><a href="login.html">Login/Register</a></li>
+              <li><a href="contact.html">Contact Us</a></li>                
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>   
+  <!-- End Top Navbar -->
+
+  <!-- Top Header Bar -->
+  <div id="nav-container" class="top-header">
+    <div class="container-fluid">            
+      <h3>Team Page</h3>
+    </div>
+  </div>  <!-- End -->
+
+  <!-- Team -->
+  <div id="team" class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="page-header">
+          <h2>Our Team</h2>
+        </div>
+        <div class="col-md-3"> 
+         <div class="team-section section-box">
+            <img class="img-rounded img-responsive" src="images/c01.jpg" alt="image">
+            <div class="stack-effect text-center">
+              <a class="btn-social btn1-facebook btn-sm" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn1-twitter btn-sm" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="btn-social btn1-google-plus btn-sm" href="#"><i class="fa fa-google-plus"></i></a>
+              <a class="btn-social btn1-linkedin btn-sm" href="#"><i class="fa fa-linkedin"></i></a>  
+            </div>                
+            <h4 class="text-center">Caroline</h4>
+            <p class="text-center">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>     
+          </div>
+        </div>
+        <div class="col-md-3"> 
+          <div class="team-section section-box">
+            <img class="img-rounded img-responsive" src="images/c02.jpg" alt="image">
+            <div class="stack-effect text-center">
+              <a class="btn-social btn1-facebook btn-sm" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn1-twitter btn-sm" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="btn-social btn1-google-plus btn-sm" href="#"><i class="fa fa-google-plus"></i></a>
+              <a class="btn-social btn1-linkedin btn-sm" href="#"><i class="fa fa-linkedin"></i></a>  
+            </div>                  
+            <h4 class="text-center">Ronald</h4>
+            <p class="text-center">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>       
+          </div>
+        </div>
+        <div class="col-md-3"> 
+          <div class="team-section section-box">
+            <img class="img-rounded img-responsive" src="images/c03.jpg" alt="image">
+            <div class="stack-effect text-center">
+              <a class="btn-social btn1-facebook btn-sm" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn1-twitter btn-sm" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="btn-social btn1-google-plus btn-sm" href="#"><i class="fa fa-google-plus"></i></a>
+              <a class="btn-social btn1-linkedin btn-sm" href="#"><i class="fa fa-linkedin"></i></a>  
+            </div>                  
+            <h4 class="text-center">Diana</h4>
+            <p class="text-center">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+          </div>
+        </div>
+        <div class="col-md-3"> 
+          <div class="team-section section-box">
+            <img class="img-rounded img-responsive" src="images/c01.jpg" alt="image">
+            <div class="stack-effect text-center">
+              <a class="btn-social btn1-facebook btn-sm" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn1-twitter btn-sm" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="btn-social btn1-google-plus btn-sm" href="#"><i class="fa fa-google-plus"></i></a>
+              <a class="btn-social btn1-linkedin btn-sm" href="#"><i class="fa fa-linkedin"></i></a>  
+            </div>            
+            <h4 class="text-center">Caroline</h4>
+            <p class="text-center">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p> 
+          </div>
+        </div>
+        <div class="col-md-4"> 
+          <div class="team-section-1 section-box">
+            <img class="img-circle img-responsive" src="images/c02.jpg">
+            <div class="stack-effect text-center">
+              <a class="btn-social btn-circle btn1-facebook btn-sm" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn-circle btn1-twitter btn-sm" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="btn-social btn-circle btn1-google-plus btn-sm" href="#"><i class="fa fa-google-plus"></i></a>
+              <a class="btn-social btn-circle btn1-linkedin btn-sm" href="#"><i class="fa fa-linkedin"></i></a>  
+            </div>            
+            <h4 class="text-center">Ronald</h4>
+            <p class="text-center">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p> 
+          </div>
+        </div>
+        <div class="col-md-4"> 
+          <div class="team-section-1  section-box">
+            <img class="img-circle img-responsive" src="images/c03.jpg" alt="image">
+            <div class="stack-effect text-center">
+              <a class="btn-social btn-circle btn1-facebook btn-sm" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn-circle btn1-twitter btn-sm" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="btn-social btn-circle btn1-google-plus btn-sm" href="#"><i class="fa fa-google-plus"></i></a>
+              <a class="btn-social btn-circle btn1-linkedin btn-sm" href="#"><i class="fa fa-linkedin"></i></a>  
+            </div>            
+            <h4 class="text-center">Caroline</h4>
+            <p class="text-center">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+          </div>
+        </div>
+        <div class="col-md-4"> 
+          <div class="team-section-1 section-box">
+            <img class="img-circle img-responsive" src="images/c01.jpg" alt="image">
+            <div class="stack-effect text-center">
+              <a class="btn-social btn-circle btn1-facebook btn-sm" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn-circle btn1-twitter btn-sm" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="btn-social btn-circle btn1-google-plus btn-sm" href="#"><i class="fa fa-google-plus"></i></a>
+              <a class="btn-social btn-circle btn1-linkedin btn-sm" href="#"><i class="fa fa-linkedin"></i></a>  
+            </div>                
+            <h4 class="text-center">Caroline</h4>
+            <p class="text-center">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End -->
+
+  <!-- Footer -->
+  <div class="top-header">
+    <div class="container-fluid">            
+      <h5>&copy; 2016 Crown UI-KIT. | All Rights Reserve To Crown Technologies.</h5>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

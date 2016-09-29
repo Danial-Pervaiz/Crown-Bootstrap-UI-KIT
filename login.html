@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crown UI-KIT</title>
+    <meta name="description" content="Ray :: Bootstrap Skin">
+    <meta name="author" content="Media-City">
+    <link href="css/bootstrap.css" rel="stylesheet"> <!-- Bootstrap CSS--> 
+    <link href="css/project.css" rel="stylesheet"> <!-- Custom Bootstrap CSS--> 
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" /> <!-- Font Awesome Css-->
+    <script src="js/jquery-latest.min.js"></script> 
+    <script type="text/javascript">
+    $(function () {
+      $(document).bind('contextmenu', function (e) {
+        e.preventDefault();
+        alert('Right Click is Not Allowed');
+      });
+
+     });
+ 	</script> <!-- Right Click Disable JS -->
+ 	<script>
+ 	document.onkeydown = function(e) {
+    if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 ||     e.keyCode === 117 || e.keycode === 17 || e.keycode === 85)) {//ctrl+u Alt+c, Alt+v will also be disabled sadly.
+        alert('Not Allowed');
+    }
+    return false;
+	};
+	</script> <!-- Ctrl+U Disable JS -->
+  </head>
+<body>
+  <!-- Top Navbar -->
+  <nav id="nav-container" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Ray BootStrap Skin</a>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">CSS</a></li>
+          <li><a href="components.html">Component</a></li>
+          <li><a href="javascripts.html">JavaScript</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Pages<span class="caret"></span></a>
+            <ul class="dropdown-menu">                       
+              <li><a href="landing.html">Landing Page</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="team.html">Our Team</a></li>            
+              <li role="separator" class="divider"></li>            
+              <li><a href="login.html">Login/Register</a></li>
+              <li><a href="contact.html">Contact Us</a></li>                
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>   
+  <!-- End Top Navbar -->
+
+  <!-- Top Header Bar -->
+<div id="nav-container" class="top-header">
+  <div class="container-fluid">            
+    <h3>Login Or Signup Page</h3>
+  </div>
+</div>  <!-- End Header -->
+<!-- Login/Registration From -->
+  <div class="container">
+    <div class="row">
+      <!-- Signup Form -->
+      <div class="col-md-6"> 
+        <div class="section-box" style="max-width:500px; margin-top:80px;">
+          <h4 class="section-box-title">Signup Form</h4> 
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="Name" class="col-md-2 control-label">Name</label>
+              <div class="col-md-10">
+                <input class="form-control" id="Name" placeholder="Name" type="text">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail" class="col-md-2 control-label">Email</label>
+              <div class="col-md-10">
+                <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword" class="col-md-2 control-label">Password</label>
+              <div class="col-md-10">
+                <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="RetypePassword" class="col-md-2 control-label">Retype Password</label>
+              <div class="col-md-10">
+                <input class="form-control" id="ResetPassword" placeholder="Password" type="password">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-10 col-md-offset-2">
+                <div class="checkbox">
+                  <label><input type="checkbox">I Agree With The <a>Terms</a>.</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-10 col-md-offset-2">
+                <button type="reset" class="btn btn-default">Reset</button>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </div>
+            </div>
+
+          <div class="section-footer"><div class=" col-md-12">For First Time Users</div></div>
+        </form>
+      </div>
+    </div> <!-- End Signup Form -->
+
+    <!-- Login Form -->
+    <div class="col-md-6"> 
+      <div class="section-box" style="max-width:500px; margin-top:80px;">
+        <h4 class="section-box-title">Login Form</h4> 
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="inputEmail" class="col-md-2 control-label">Email</label>
+            <div class="col-md-10">
+              <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword" class="col-md-2 control-label">Password</label>
+            <div class="col-md-10">
+              <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+              <div class="checkbox">
+                <label><input type="checkbox">Remember Me</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-9 col-md-offset-2">
+              <button type="submit" class="btn btn-primary">Login</button>
+              <a><small>Forgot Password</small></a>
+            </div>
+          </div>
+          <div class="section-footer"><div class=" col-md-12">For Already Registered Users</div></div>
+        </form>
+      </div>
+    </div> <!-- End Login Form  -->
+  </div>
+</div> <!-- End Container -->
+
+
+  <!-- Footer -->
+  <div class="top-header">
+    <div class="container-fluid">            
+      <h5>&copy; 2016 Crown UI-KIT. | All Rights Reserve To Crown Technologies.</h5>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>&copy;

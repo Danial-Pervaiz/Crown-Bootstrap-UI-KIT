@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crown UI-KIT</title>
+    <meta name="description" content="Ray :: Bootstrap Skin">
+    <meta name="author" content="Media-City">
+    <link href="css/bootstrap.css" rel="stylesheet"> <!-- Bootstrap CSS--> 
+    <link href="css/project.css" rel="stylesheet"> <!-- Custom Bootstrap CSS--> 
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" /> <!-- Font Awesome Css-->
+    <script src="js/jquery-latest.min.js"></script>  
+    <script type="text/javascript">
+    $(function () {
+      $(document).bind('contextmenu', function (e) {
+        e.preventDefault();
+        alert('Right Click is Not Allowed');
+      });
+
+     });
+ 	</script> <!-- Right Click Disable JS -->
+ 	<script>
+ 	document.onkeydown = function(e) {
+    if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 ||     e.keyCode === 117 || e.keycode === 17 || e.keycode === 85)) {//ctrl+u Alt+c, Alt+v will also be disabled sadly.
+        alert('Not Allowed');
+    }
+    return false;
+	};
+	</script> <!-- Ctrl+U Disable JS --> 
+  </head>
+<body>
+  <!-- Top Navbar -->
+  <nav id="nav-container" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Crown UI-KIT</a>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">CSS</a></li>
+          <li><a href="components.html">Component</a></li>
+          <li><a href="javascripts.html">JavaScript</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Pages<span class="caret"></span></a>
+            <ul class="dropdown-menu">                       
+              <li><a href="landing.html">Landing Page</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="team.html">Our Team</a></li>            
+              <li role="separator" class="divider"></li>            
+              <li><a href="login.html">Login/Register</a></li>
+              <li><a href="contact.html">Contact Us</a></li>                
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>   
+  <!-- End Top Navbar -->
+  <!-- Top Header Bar -->
+  <div  id="nav-container" class="top-header">
+    <div class="container-fluid">            
+      <h3>Components</h3>
+    </div>
+  </div>  
+  <!-- End Top Header Bar -->
+
+  <!-- Main Section Start -->    
+  <div class="section-start clearfix">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h2>Navbar</h2>
+          </div>
+          <div class="section-component">
+            <nav class="navbar navbar-default">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- navbar-collapse -->
+            </nav>
+          </div> <!-- End Navbar Default -->
+
+          <!-- Navbar Inverse -->
+          <div class="section-component">
+            <nav class="navbar navbar-inverse">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </nav>
+          </div> <!-- End Navbar Inversere -->
+
+          <!-- Navbar Light -->
+          <div class="section-component">
+           <nav class="navbar navbar-light">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+           </nav>
+          </div> <!-- End Navbar Light -->
+        </div>
+      </div>
+    </div> 
+  </div><!-- End Navbar -->
+
+  <!-- Font Awesome Icons -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h2>Font Awesome Icons</h2>
+          </div>
+
+          <ul class="general-icons">
+            <li><a class="align-center"><i class="fa fa-align-center"></i><p>align-center</p></a></li>
+            <li><a class="align-justify"><i class="fa fa-align-justify"></i><p> align-justify</p></a></li>
+            <li><a class="align-left"><i class="fa fa-align-left"></i><p> align-left</p></a></li>
+            <li><a class="align-right"><i class="fa fa-align-right"></i><p> align-right</p></a></li>
+            <li><a class="bold"><i class="fa fa-bold"></i><p> bold</p></a></li>
+            <li><a class="link"><i class="fa fa-chain"></i><p> chain</p></a></li>
+            <li><a class="chain-broken"><i class="fa fa-chain-broken"></i><p> chain-broken</p></a></li>
+            <li><a class="clipboard"><i class="fa fa-clipboard"></i><p> clipboard</p></a></li>
+            <li><a class="columns"><i class="fa fa-columns"></i><p> columns</p></a></li>
+            <li><a class="files-o"><i class="fa fa-copy"></i><p> copy</p></a></li>
+            <li><a class="scissors"><i class="fa fa-cut"></i><p> cut</p></a></li>
+            <li><a class="outdent"><i class="fa fa-dedent"></i><p> dedent</p></a></li>
+            <li><a class="eraser"><i class="fa fa-eraser"></i><p> eraser</p></a></li>
+            <li><a class="file"><i class="fa fa-file"></i><p> file</p></a></li>
+            <li><a class="file-o"><i class="fa fa-file-o"></i><p> file-o</p></a></li>
+            <li><a class="file-text"><i class="fa fa-file-text"></i><p> file-text</p></a></li>
+            <li><a class="file-text-o"><i class="fa fa-file-text-o"></i><p> file-text-o</p></a></li>
+            <li><a class="files-o"><i class="fa fa-files-o"></i><p> files-o</p></a></li>
+            <li><a class="floppy-o"><i class="fa fa-floppy-o"></i><p> floppy-o</p></a></li>
+            <li><a class="font"><i class="fa fa-font"></i><p> font</p></a></li>
+            <li><a class="header"><i class="fa fa-header"></i><p> header</p></a></li>
+            <li><a class="indent"><i class="fa fa-indent"></i><p> indent</p></a></li>
+            <li><a class="italic"><i class="fa fa-italic"></i><p> italic</p></a></li>
+            <li><a class="link"><i class="fa fa-link"></i><p> link</p></a></li>
+            <li><a class="list"><i class="fa fa-list"></i><p> list</p></a></li>
+            <li><a class="list-alt"><i class="fa fa-list-alt"></i><p> list-alt</p></a></li>
+            <li><a class="list-ol"><i class="fa fa-list-ol"></i><p> list-ol</p></a></li>
+            <li><a class="list-ul"><i class="fa fa-list-ul"></i><p> list-ul</p></a></li>
+            <li><a class="outdent"><i class="fa fa-outdent"></i><p> outdent</p></a></li>
+            <li><a class="paperclip"><i class="fa fa-paperclip"></i><p> paperclip</p></a></li>
+            <li><a class="paragraph"><i class="fa fa-paragraph"></i><p> paragraph</p></a></li>
+            <li><a class="clipboard"><i class="fa fa-paste"></i><p> paste</p></a></li>
+            <li><a class="repeat"><i class="fa fa-repeat"></i><p> repeat</p></a></li>
+            <li><a class="undo"><i class="fa fa-rotate-left"></i><p> rotate-left</p></a></li>
+            <li><a class="repeat"><i class="fa fa-rotate-right"></i><p> rotate-right</p></a></li>
+            <li><a class="floppy-o"><i class="fa fa-save"></i><p> save</p></a></li>
+            <li><a class="scissors"><i class="fa fa-scissors"></i><p> scissors</p></a></li>
+            <li><a class="strikethrough"><i class="fa fa-strikethrough"></i><p> strikethrough</p></a></li>
+            <li><a class="subscript"><i class="fa fa-subscript"></i><p> subscript</p></a></li>
+            <li><a class="superscript"><i class="fa fa-superscript"></i><p> superscript</p></a></li>
+            <li><a class="table"><i class="fa fa-table"></i><p> table</p></a></li>
+            <li><a class="text-height"><i class="fa fa-text-height"></i><p> text-height</p></a></li>
+            <li><a class="text-width"><i class="fa fa-text-width"></i><p> text-width</p></a></li>
+            <li><a class="th"><i class="fa fa-th"></i><p> th</p></a></li>
+            <li><a class="th-large"><i class="fa fa-th-large"></i><p> th-large</p></a></li>
+            <li><a class="th-list"><i class="fa fa-th-list"></i><p> th-list</p></a></li>
+            <li><a class="underline"><i class="fa fa-underline"></i><p> underline</p></a></li>
+            <li><a class="undo"><i class="fa fa-undo"></i><p> undo</p></a></li>
+            <li><a class="chain-broken"><i class="fa fa-unlink"></i><p> unlink</p></a></li>
+          </ul>
+        </div>
+        <div class="more-icons col-md-12 text-center" style="padding-top:10px;">
+          Visit <b><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome Icons</a></b> Page to View All Icons
+        </div>
+      </div>
+    </div>
+  </div> <!-- End Font Awesome Icons -->
+
+    <!-- Buttons  -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="page-header col-md-12">
+          <h2>Buttons</h2>
+        </div>
+
+        <div class="col-md-7">
+          <div class="section-box">
+            <h4 class="section-box-title">General Buttons</h4>
+
+            <p class="section-component">
+              <a href="#" class="btn btn-default hvr-shutter-out-horizontal">Default</a>
+              <a href="#" class="btn btn-primary">Primary</a>
+              <a href="#" class="btn btn-success">Success</a>
+              <a href="#" class="btn btn-info">Info</a>
+              <a href="#" class="btn btn-warning">Warning</a>
+              <a href="#" class="btn btn-danger">Danger</a>
+            </p>
+            <p class="section-component">
+              <a href="#" class="btn btn-default disabled">Default</a>
+              <a href="#" class="btn btn-primary disabled">Primary</a>
+              <a href="#" class="btn btn-success disabled">Success</a>
+              <a href="#" class="btn btn-info disabled">Info</a>
+              <a href="#" class="btn btn-warning disabled">Warning</a>
+              <a href="#" class="btn btn-danger disabled">Danger</a>
+            </p>
+            <p class="section-component">
+              <div class="btn-group"> <!--Single button -->
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Default <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Primary <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Success <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Info <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Warning <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Danger <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </p>
+            <p class="section-component">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default">Default</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div> 
+              <div class="btn-group">
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div> 
+            </p>
+            <p class="section-component">
+              <a href="#" class="btn btn-primary btn-lg btn-block">Block Level Button</a>
+            </p>
+            <p class="section-component">
+             <div class="btn-toolbar">
+              <div class="btn-group">
+                  <a href="#" class="btn btn-primary">1</a>
+                  <a href="#" class="btn btn-primary">2</a>
+                  <a href="#" class="btn btn-primary">3</a>
+                  <a href="#" class="btn btn-primary">4</a>
+              </div>
+              <div class="btn-group">
+                  <a href="#" class="btn btn-primary">5</a>
+                  <a href="#" class="btn btn-primary">6</a>
+                  <a href="#" class="btn btn-primary">7</a>
+              </div></div>
+            </p>
+            <p class="section-component">
+              <div class="btn-group">
+                <a href="#" class="btn btn-primary">Left</a>
+                <a href="#" class="btn btn-primary">Middle</a>
+                <a href="#" class="btn btn-primary">Right</a>
+              </div>
+            </p>
+            <p class="section-component">
+              <a href="#" class="btn btn-primary btn-lg">Button Large</a>
+              <a href="#" class="btn btn-primary">Button Middle</a>
+              <a href="#" class="btn btn-primary btn-sm">Button Small</a>
+              <a href="#" class="btn btn-primary btn-xs">Extra Small</a>
+            </p>
+            <p class="section-component">
+              <a href="#" class="btn btn-primary btn-square">Square</a>
+              <a href="#" class="btn btn-primary btn-round">Round</a>
+              <a href="#" class="btn btn-primary">Default</a>
+              <a href="#" class="btn btn-primary btn-special">Special</a>
+              <a href="#" class="btn btn-primary btn-circle">Circle</a>
+              <a href="#" class="btn btn-primary btn-hexagonal">Hexagonal</a>
+              <a href="#" class="btn btn-primary btn-quard">Quard</a>
+            </p>
+          </div>
+        </div>           
+        <div class="col-md-5">
+          <div class="section-box">
+            <h4 class="section-box-title">Social Buttons</h4>
+            <p class="section-component">
+              <a class="btn-social btn-dropbox" href="#"><i class="fa fa-dropbox"></i></a>
+              <a class="btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn-flickr" href="#"><i class="fa fa-flickr"></i></a>
+              <a class="btn-social btn-foursquare" href="#"><i class="fa fa-foursquare"></i></a>
+              <a class="btn-social btn-github" href="#"><i class="fa fa-github-alt"></i></a>
+              <a class="btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+              <a class="btn-social btn-instagram" href="#"><i class="fa fa-instagram"></i></a>
+              <a class="btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              <a class="btn-social btn-paypal" href="#"><i class="fa fa-paypal"></i></a>
+              <a class="btn-social btn-pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+              <a class="btn-social btn-reddit" href="#"><i class="fa fa-reddit"></i></a>
+              <a class="btn-social btn-skype" href="#"><i class="fa fa-skype"></i></a>
+              <a class="btn-social btn-soundcloud" href="#"><i class="fa fa-soundcloud"></i></a>
+              <a class="btn-social btn-tumblr" href="#"><i class="fa fa-tumblr"></i></a>
+              <a class="btn-social btn-twitch" href="#"><i class="fa fa-twitch"></i></a>
+              <a class="btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="btn-social btn-vimeo" href="#"><i class="fa fa-vimeo-square"></i></a>
+              <a class="btn-social btn-vine" href="#"><i class="fa fa-vine"></i></a>
+              <a class="btn-social btn-vk" href="#"><i class="fa fa-vk"></i></a>
+              <a class="btn-social btn-wechat" href="#"><i class="fa fa-wechat"></i></a>
+              <a class="btn-social btn-wordpress" href="#"><i class="fa fa-wordpress"></i></a>
+              <a class="btn-social btn-xing" href="#"><i class="fa fa-xing"></i></a>
+              <a class="btn-social btn-yahoo" href="#"><i class="fa fa-yahoo"></i></a>
+              <a class="btn-social btn-yelp" href="#"><i class="fa fa-yelp"></i></a>
+              <a class="btn-social btn-youtube" href="#"><i class="fa fa-youtube"></i></a>
+              <a class="btn-social btn-email" href="#"><i class="fa fa-envelope"></i></a>
+            </p>
+            <p class="section-component">
+              <a class="btn-social btn-facebook btn-lg" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn-facebook btn-sm" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn-facebook btn-xs" href="#"><i class="fa fa-facebook"></i></a>
+            </p>
+            <p class="section-component">
+              <a class="btn-social btn-facebook btn-square" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn-facebook btn-round" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a>      
+              <a class="btn-social btn-facebook btn-special" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn-facebook btn-circle" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn-facebook btn-hexagonal" href="#"><i class="fa fa-facebook"></i></a>
+              <a class="btn-social btn-facebook btn-quard" href="#"><i class="fa fa-facebook"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+    <!-- End Buttons -->
+
+    <!-- Social Icons Arrangement  -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="page-header col-md-12">
+          <h2>Social Icons Patterns</h2>
+        </div>
+        <div class="section-box col-md-12">
+          <h4 class="section-box-title">Social Icons</h4> 
+          <div class="col-md-6 text-center">
+            <a class="btn-social btn1-facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn-social btn1-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="btn-social btn1-youtube" href="#"><i class="fa fa-youtube"></i></a>
+            <a class="btn-social btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+            <a class="btn-social btn1-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="btn-social btn1-instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="stack-effect col-md-6 text-center">
+            <a class="btn-social btn1-facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn-social btn1-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="btn-social btn1-youtube" href="#"><i class="fa fa-youtube"></i></a>
+            <a class="btn-social btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+            <a class="btn-social btn1-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="btn-social btn1-instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="col-md-6 text-center">
+            <a class="btn-social btn-circle btn1-facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn-social btn-circle btn1-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="btn-social btn-circle btn1-youtube" href="#"><i class="fa fa-youtube"></i></a>
+            <a class="btn-social btn-circle btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+            <a class="btn-social btn-circle btn1-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="btn-social btn-circle btn1-instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="stack-effect col-md-6 text-center">
+            <a class="btn-social btn-circle btn1-facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn-social btn-circle btn1-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="btn-social btn-circle btn1-youtube" href="#"><i class="fa fa-youtube"></i></a>
+            <a class="btn-social btn-circle btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+            <a class="btn-social btn-circle btn1-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="btn-social btn-circle btn1-instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div> 
+          <div class="col-md-6 text-center">
+            <a class="btn-social btn-special btn1-facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn-social btn-special btn1-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="btn-social btn-special btn1-youtube" href="#"><i class="fa fa-youtube"></i></a>
+            <a class="btn-social btn-special btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+            <a class="btn-social btn-special btn1-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="btn-social btn-special btn1-instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="stack-effect col-md-6 text-center">
+            <a class="btn-social btn-special btn1-facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn-social btn-special btn1-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="btn-social btn-special btn1-youtube" href="#"><i class="fa fa-youtube"></i></a>
+            <a class="btn-social btn-special btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+            <a class="btn-social btn-special btn1-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="btn-social btn-special btn1-instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="col-md-6 text-center">
+            <a class="btn-social btn-square btn1-facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn-social btn-square btn1-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="btn-social btn-square btn1-youtube" href="#"><i class="fa fa-youtube"></i></a>
+            <a class="btn-social btn-square btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+            <a class="btn-social btn-square btn1-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="btn-social btn-square btn1-instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="stack-border col-md-6 text-center">
+            <a class="btn-social btn-square btn1-facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn-social btn-square btn1-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="btn-social btn-square btn1-youtube" href="#"><i class="fa fa-youtube"></i></a>
+            <a class="btn-social btn-square btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+            <a class="btn-social btn-square btn1-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="btn-social btn-square btn1-instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="col-md-6 text-center">
+            <a class="btn-social btn-quard btn1-facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn-social btn-quard btn1-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="btn-social btn-quard btn1-youtube" href="#"><i class="fa fa-youtube"></i></a>
+            <a class="btn-social btn-quard btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+            <a class="btn-social btn-quard btn1-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="btn-social btn-quard btn1-instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="stack-border col-md-6 text-center">
+            <a class="btn-social btn-quard btn1-facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn-social btn-quard btn1-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="btn-social btn-quard btn1-youtube" href="#"><i class="fa fa-youtube"></i></a>
+            <a class="btn-social btn-quard btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+            <a class="btn-social btn-quard btn1-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="btn-social btn-quard btn1-instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div>       
+           <div class="col-md-6 text-center">
+            <a class="btn-social btn-hexagonal btn1-facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn-social btn-hexagonal btn1-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="btn-social btn-hexagonal btn1-youtube" href="#"><i class="fa fa-youtube"></i></a>
+            <a class="btn-social btn-hexagonal btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+            <a class="btn-social btn-hexagonal btn1-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="btn-social btn-hexagonal btn1-instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="stack-border col-md-6 text-center">
+            <a class="btn-social btn-hexagonal btn1-facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="btn-social btn-hexagonal btn1-twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="btn-social btn-hexagonal btn1-youtube" href="#"><i class="fa fa-youtube"></i></a>
+            <a class="btn-social btn-hexagonal btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+            <a class="btn-social btn-hexagonal btn1-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="btn-social btn-hexagonal btn1-instagram" href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+          <div class="col-md-8 text-center">
+            <div class="stack-full">
+              <a class="btn-social btn-square btn1-facebook" href="#"><i class="fa fa-facebook"></i><h5 class="s-icon">Facebook</h5></a>
+              <a class="btn-social btn-square btn1-twitter" href="#"><i class="fa fa-twitter"></i><h5 class="s-icon">Twitter</h5></a>
+              <a class="btn-social btn-square btn1-youtube text-center" href="#"><i class="fa fa-youtube"></i><h5 class="s-icon">Youtube</h5></a>
+              <a class="btn-social btn-square btn1-linkedin text-center" href="#"><i class="fa fa-linkedin"></i><h5 class="s-icon">Linkedin</h5></a>
+            </div>
+            <div class="stack-full1 text-center">
+              <a class="btn-social btn-square btn1-facebook" href="#"><i class="fa fa-facebook"></i><h5 class="s-icon1">Facebook</h5></a>
+              <a class="btn-social btn-square btn1-twitter" href="#"><i class="fa fa-twitter"></i><h5 class="s-icon1">Twitter</h5></a>
+              <a class="btn-social btn-square btn1-youtube text-center" href="#"><i class="fa fa-youtube"></i><h5 class="s-icon1">Youtube</h5></a>
+              <a class="btn-social btn-square btn1-linkedin text-center" href="#"><i class="fa fa-linkedin"></i><h5 class="s-icon1">Linkedin</h5></a>
+            </div>      
+            <div class="stack-wide text-center">
+              <a class="btn-social btn-square btn1-facebook" href="#"><h5 class="s-wide-icon">Facebook</h5></a>
+              <a class="btn-social btn-square btn1-twitter" href="#"><h5 class="s-wide-icon">Twitter</h5></a>
+              <a class="btn-social btn-square btn1-youtube text-center" href="#"><h5 class="s-wide-icon">Youtube</h5></a>
+              <a class="btn-social btn-square btn1-linkedin text-center" href="#"><h5 class="s-wide-icon">Linkedin</h5></a>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="stack-list">
+              <ul><li><a class="btn-social btn-circle btn1-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="btn-social btn-circle btn1-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="btn-social btn-circle btn1-youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a class="btn-social btn-circle btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li></ul>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="stack-list">
+              <ul><li><a class="btn-social btn-square btn1-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="btn-social btn-square btn1-youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a class="btn-social btn-square btn1-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="btn-social btn-square btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li></ul>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="stack-list-square">
+              <ul><li><a class="btn-social btn-square btn1-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="btn-social btn-square btn1-youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a class="btn-social btn-square btn1-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="btn-social btn-square btn1-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a class="btn-social btn-square btn1-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- End Social Icon -->
+
+  <!-- Panel -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="page-header col-md-12">
+          <h2>Panel</h2>
+        </div>
+        <div class="Section-component col-md-12">
+          <div class="col-md-4">
+            <div class="panel panel-default zoom-out">
+              <div class="panel-heading">
+                <h3 class="panel-title">Panel Default</h3>
+              </div>
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ornare odio, sed vulputate erat. Quisque sed consequat urna, non ultrices ante. lorem et rhoncus elementum.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-primary zoom-out">
+              <div class="panel-heading">
+                <h3 class="panel-title">Panel Primary</h3>
+              </div>
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ornare odio, sed vulputate erat. Quisque sed consequat urna, non ultrices ante. 
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-info zoom-out">
+              <div class="panel-heading">
+                <h3 class="panel-title">Panel Info</h3>
+              </div>
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ornare odio, sed vulputate erat. Quisque sed consequat urna, non ultrices ante.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-success zoom-out">
+              <div class="panel-heading">
+                <h3 class="panel-title">Panel Success</h3>
+              </div>
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ornare odio, sed vulputate erat. Quisque sed consequat urna, non ultrices ante. 
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-warning zoom-out">
+              <div class="panel-heading">
+                <h3 class="panel-title">Panel Warning</h3>
+              </div>
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ornare odio, sed vulputate erat. Quisque sed consequat urna, non ultrices ante. 
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-danger zoom-out">
+              <div class="panel-heading">
+                <h3 class="panel-title">Panel Danger</h3>
+              </div>
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ornare odio, sed vulputate erat. Quisque sed consequat urna, non ultrices ante.
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="section-component col-md-12">
+        <h4 class="section-heading">PANEL STYLE-1</h4></div>       
+        <div class="section-component col-md-12"> 
+          <div class="col-md-4">
+            <div class="panel panel-style-1 panel-default zoom-out">
+              <div class="panel-heading">
+                <h3 class="panel-title">Panel Style-1 Default</h3>
+              </div>
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ornare odio, sed vulputate erat. Quisque sed consequat urna, non ultrices ante.
+              </div>
+            </div>
+          </div>
+           <div class="col-md-4">
+            <div class="panel panel-style-1 panel-primary zoom-out">
+              <div class="panel-heading">
+                <h3 class="panel-title">Panel Style-1 Primary</h3>
+              </div>
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ornare odio, sed vulputate erat. Quisque sed consequat urna, non ultrices ante. 
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-style-1 panel-info zoom-out">
+              <div class="panel-heading">
+                <h3 class="panel-title">Panel Style-1 Info</h3>
+              </div>
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ornare odio, sed vulputate erat. Quisque sed consequat urna, non ultrices ante.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-style-1 panel-success zoom-out">
+              <div class="panel-heading">
+                <h3 class="panel-title">Panel Style-1 Success</h3>
+              </div>
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ornare odio, sed vulputate erat. Quisque sed consequat urna, non ultrices ante.
+              </div>
+            </div>
+          </div>
+           <div class="col-md-4">
+            <div class="panel panel-style-1 panel-warning zoom-out">
+              <div class="panel-heading">
+                <h3 class="panel-title">Panel Style-1 Warning</h3>
+              </div>
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ornare odio, sed vulputate erat. Quisque sed consequat urna, non ultrices ante. 
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-style-1 panel-danger zoom-out">
+              <div class="panel-heading">
+                <h3 class="panel-title">Panel Style-1 Danger</h3>
+              </div>
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ornare odio, sed vulputate erat. Quisque sed consequat urna, non ultrices ante. 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+    <!-- End Panel -->
+
+    <!-- Progress Bar -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="page-header col-md-12">
+          <h2>Progress Bar</h2>
+        </div>
+          
+        <div class="section-box col-md-12">
+          <h4 class="section-box-title">Default Progess Bar</h4> 
+          <div class="col-md-6">
+            <h4>Basic</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                60%
+              </div>
+            </div>        
+            <h4>Contextual Alternatives</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                <span class="sr-only">40% Complete (success)</span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                <span class="sr-only">20% Complete</span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                <span class="sr-only">60% Complete (Warning)</span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                <span class="sr-only">80% Complete (Danger)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4>Striped With Animated</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                <span class="sr-only">40% Complete (Success)</span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                <span class="sr-only">30% Complete</span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                <span class="sr-only">60% Complete (Warning)</span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                <span class="sr-only">80% Complete (Danger)</span>
+              </div>
+            </div>
+            <h4>Stacked</h4>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" style="width: 35%">
+                <span class="sr-only">30% Complete (Success)</span>
+              </div>
+              <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+                <span class="sr-only">25% Complete (Warning)</span>
+              </div>
+              <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 10%">
+                <span class="sr-only">20% Complete (Danger)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-box col-md-12">
+          <h4 class="section-box-title">Progess Bar Type-1</h4> 
+          <div class="col-md-6">  
+            <div class="progress-type-1">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                <span class="sr-only">40% Complete (Success)</span>
+              </div>
+            </div>
+            <div class="progress-type-1">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                <span class="sr-only">20% Complete</span>
+              </div>
+            </div>
+            <div class="progress-type-1">
+              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                <span class="sr-only">60% Complete (Warning)</span>
+              </div>
+            </div>
+            <div class="progress-type-1">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                <span class="sr-only">80% Complete (Danger)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-type-1">
+              <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                <span class="sr-only">30% Complete</span>
+              </div>
+            </div>
+            <div class="progress-type-1">
+              <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                <span class="sr-only">60% Complete (Warning)</span>
+              </div>
+            </div>
+            <div class="progress-type-1">
+              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                <span class="sr-only">80% Complete (Danger)</span>
+              </div>
+            </div>
+            <div class="progress-type-1">
+              <div class="progress-bar progress-bar-success" style="width: 35%">
+                <span class="sr-only">30% Complete (Success)</span>
+              </div>
+              <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+                <span class="sr-only">25% Complete (warning)</span>
+              </div>
+              <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 10%">
+                <span class="sr-only">20% Complete (Danger)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-box col-md-12">
+          <h4 class="section-box-title">Progess Bar Type-2</h4> 
+          <div class="col-md-6">            
+            <div class="progress-type-2">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                <span class="sr-only">40% Complete (Success)</span>
+              </div>
+            </div>
+            <div class="progress-type-2">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                <span class="sr-only">20% Complete</span>
+              </div>
+            </div>
+            <div class="progress-type-2">
+              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                <span class="sr-only">60% Complete (Warning)</span>
+              </div>
+            </div>
+            <div class="progress-type-2">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                <span class="sr-only">80% Complete (Danger)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-type-2">
+              <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                <span class="sr-only">30% Complete</span>
+              </div>
+            </div>
+            <div class="progress-type-2">
+              <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                <span class="sr-only">60% Complete (Warning)</span>
+              </div>
+            </div>
+            <div class="progress-type-2">
+              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                <span class="sr-only">80% Complete (Danger)</span>
+              </div>
+            </div>
+            <div class="progress-type-2">
+              <div class="progress-bar progress-bar-success" style="width: 35%">
+                <span class="sr-only">30% Complete (Success)</span>
+              </div>
+              <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+                <span class="sr-only">25% Complete (Warning)</span>
+              </div>
+              <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 10%">
+                <span class="sr-only">20% Complete (Danger)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End Progress -->
+
+    <!-- List -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="page-header col-md-12">
+          <h2>List Group</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="section-box col-md-12">
+          <h4 class="section-box-title">Basic List</h4>
+          <div class="col-md-4">
+            <h4>Basic List</h4>
+              <ul class="list-group">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+          </div>
+          <div class="col-md-4">           
+            <h4>Striped List</h4>
+            <ul class="list-group zebra-list">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Button Items</h4>
+            <div class="list-group">
+              <button type="button" class="list-group-item">Cras justo odio</button>
+              <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+              <button type="button" class="list-group-item">Morbi leo risus</button>
+              <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+              <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+            </div>
+          </div>
+        </div>
+        <br>      
+        <div class="section-box col-md-12">
+          <h4 class="section-box-title">Badges List</h4>
+          <div class="col-md-4">
+            <h4>Badges List</h4>
+            <ul class="list-group">
+              <li class="list-group-item"><span class="badge">14</span>Cras justo odio</li>
+              <li class="list-group-item"><span class="badge">5</span>Dapibus ac facilisis in</li>
+              <li class="list-group-item"><span class="badge">34</span>Morbi leo risus</li>
+              <li class="list-group-item"><span class="badge">50</span>Porta ac consectetur ac</li>
+              <li class="list-group-item"><span class="badge">70</span>Vestibulum at eros</li>
+            </ul>
+          </div>
+          <div class="col-md-4">           
+            <h4>Square Badge List</h4>
+            <ul class="list-group">
+              <li class="list-group-item"><span class="badge btn-square">14</span>Cras justo odio</li>
+              <li class="list-group-item"><span class="badge btn-square">5</span>Dapibus ac facilisis in</li>
+              <li class="list-group-item"><span class="badge btn-square">34</span>Morbi leo risus</li>
+              <li class="list-group-item"><span class="badge btn-square">50</span>Porta ac consectetur ac</li>
+              <li class="list-group-item"><span class="badge btn-square">70</span>Vestibulum at eros</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Quadrilateral Badges</h4>
+            <ul class="list-group">
+              <li class="list-group-item"><span class="badge btn-quard">14</span>Cras justo odio</li>
+              <li class="list-group-item"><span class="badge btn-quard">5</span>Dapibus ac facilisis in</li>
+              <li class="list-group-item"><span class="badge btn-quard">34</span>Morbi leo risus</li>
+              <li class="list-group-item"><span class="badge btn-quard">50</span>Porta ac consectetur ac</li>
+              <li class="list-group-item"><span class="badge btn-quard">70</span>Vestibulum at eros</li>
+            </ul>
+          </div>         
+          <div class="col-md-4">
+            <h4>Round Badges List</h4>
+            <ul class="list-group">
+              <li class="list-group-item"><span class="badge btn-round">14</span>Cras justo odio</li>
+              <li class="list-group-item"><span class="badge btn-round">5</span>Dapibus ac facilisis in</li>
+              <li class="list-group-item"><span class="badge btn-round">34</span>Morbi leo risus</li>
+              <li class="list-group-item"><span class="badge btn-round">50</span>Porta ac consectetur ac</li>
+              <li class="list-group-item"><span class="badge btn-round">70</span>Vestibulum at eros</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Hexagonal Badges List</h4>
+            <ul class="list-group">
+              <li class="list-group-item"><span class="badge btn-hexagonal">14</span>Cras justo odio</li>
+              <li class="list-group-item"><span class="badge btn-hexagonal">5</span>Dapibus ac facilisis in</li>
+              <li class="list-group-item"><span class="badge btn-hexagonal">34</span>Morbi leo risus</li>
+              <li class="list-group-item"><span class="badge btn-hexagonal">50</span>Porta ac consectetur ac</li>
+              <li class="list-group-item"><span class="badge btn-hexagonal">70</span>Vestibulum at eros</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Special Badges List</h4>
+            <ul class="list-group">
+              <li class="list-group-item"><span class="badge btn-special">14</span>Cras justo odio</li>
+              <li class="list-group-item"><span class="badge btn-special">5</span>Dapibus ac facilisis in</li>
+              <li class="list-group-item"><span class="badge btn-special">34</span>Morbi leo risus</li>
+              <li class="list-group-item"><span class="badge btn-special">50</span>Porta ac consectetur ac</li>
+              <li class="list-group-item"><span class="badge btn-special">70</span>Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+        <br>
+        <div class="section-box col-md-12">
+          <h4 class="section-box-title">Zebra Badges List</h4>
+          <div class="col-md-4">
+            <h4>Badges List</h4>
+            <ul class="list-group zebra-list">
+              <li class="list-group-item"><span class="badge">14</span>Cras justo odio</li>
+              <li class="list-group-item"><span class="badge">5</span>Dapibus ac facilisis in</li>
+              <li class="list-group-item"><span class="badge">34</span>Morbi leo risus</li>
+              <li class="list-group-item"><span class="badge">50</span>Porta ac consectetur ac</li>
+              <li class="list-group-item"><span class="badge">70</span>Vestibulum at eros</li>
+            </ul>
+          </div>
+          <div class="col-md-4">           
+            <h4>Square Badge List</h4>
+            <ul class="list-group zebra-list">
+              <li class="list-group-item"><span class="badge btn-square">14</span>Cras justo odio</li>
+              <li class="list-group-item"><span class="badge btn-square">5</span>Dapibus ac facilisis in</li>
+              <li class="list-group-item"><span class="badge btn-square">34</span>Morbi leo risus</li>
+              <li class="list-group-item"><span class="badge btn-square">50</span>Porta ac consectetur ac</li>
+              <li class="list-group-item"><span class="badge btn-square">70</span>Vestibulum at eros</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Quadrilateral Badges</h4>
+            <ul class="list-group zebra-list">
+              <li class="list-group-item"><span class="badge btn-quard">14</span>Cras justo odio</li>
+              <li class="list-group-item"><span class="badge btn-quard">5</span>Dapibus ac facilisis in</li>
+              <li class="list-group-item"><span class="badge btn-quard">34</span>Morbi leo risus</li>
+              <li class="list-group-item"><span class="badge btn-quard">50</span>Porta ac consectetur ac</li>
+              <li class="list-group-item"><span class="badge btn-quard">70</span>Vestibulum at eros</li>
+            </ul>
+          </div>         
+          <div class="col-md-4">
+            <h4>Round Badges List</h4>
+            <ul class="list-group zebra-list">
+              <li class="list-group-item"><span class="badge btn-round">14</span>Cras justo odio</li>
+              <li class="list-group-item"><span class="badge btn-round">5</span>Dapibus ac facilisis in</li>
+              <li class="list-group-item"><span class="badge btn-round">34</span>Morbi leo risus</li>
+              <li class="list-group-item"><span class="badge btn-round">50</span>Porta ac consectetur ac</li>
+              <li class="list-group-item"><span class="badge btn-round">70</span>Vestibulum at eros</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Hexagonal Badges List</h4>
+            <ul class="list-group zebra-list">
+              <li class="list-group-item"><span class="badge btn-hexagonal">14</span>Cras justo odio</li>
+              <li class="list-group-item"><span class="badge btn-hexagonal">5</span>Dapibus ac facilisis in</li>
+              <li class="list-group-item"><span class="badge btn-hexagonal">34</span>Morbi leo risus</li>
+              <li class="list-group-item"><span class="badge btn-hexagonal">50</span>Porta ac consectetur ac</li>
+              <li class="list-group-item"><span class="badge btn-hexagonal">70</span>Vestibulum at eros</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Special Badges List</h4>
+            <ul class="list-group zebra-list">
+              <li class="list-group-item"><span class="badge btn-special">14</span>Cras justo odio</li>
+              <li class="list-group-item"><span class="badge btn-special">5</span>Dapibus ac facilisis in</li>
+              <li class="list-group-item"><span class="badge btn-special">34</span>Morbi leo risus</li>
+              <li class="list-group-item"><span class="badge btn-special">50</span>Porta ac consectetur ac</li>
+              <li class="list-group-item"><span class="badge btn-special">70</span>Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+        <br>
+        <div class="section-box col-md-12">
+          <h4 class="section-box-title">Custom List</h4>
+          <div class="col-md-4">           
+            <h4>Linked Items</h4>
+            <div class="list-group">
+              <a href="#" class="list-group-item active">Cras justo odio</a>
+              <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+              <a href="#" class="list-group-item">Morbi leo risus</a>
+              <a href="#" class="list-group-item disabled"><strong>Disabled</strong> Porta consectetur ac</a>
+              <a href="#" class="list-group-item">Vestibulum at eros</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4>Contextual Classes</h4>
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-primary zoom-out">Vestibulum at eros</li>
+              <li class="list-group-item list-group-item-success zoom-out">Dapibus ac facilisis in</li>
+              <li class="list-group-item list-group-item-info zoom-out">Cras sit amet nibh libero</li>
+              <li class="list-group-item list-group-item-warning zoom-out">Porta ac consectetur ac</li>
+              <li class="list-group-item list-group-item-danger zoom-out">Vestibulum at eros</li>
+            </ul> 
+          </div>
+          <div class="col-md-4">           
+            <h4>Custom Content</h4>
+            <div class="list-group">
+              <a href="#" class="list-group-item active">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">Dapibus ac facilisis in</p>
+              </a>
+              <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">Vestibulum at eros</p>
+              </a>
+               <a href="#" class="list-group-item list-group-item-success">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">Porta ac consectetur ac</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+    <!-- End List -->
+
+  <!-- Navs -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="page-header col-md-12">
+          <h2>Navs</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="section-heading">Tabs</h4>
+          <ul class="nav nav-tabs">
+            <li class=""><a aria-expanded="false" href="#home" data-toggle="tab">Home</a></li>
+            <li class="active"><a aria-expanded="true" href="#profile" data-toggle="tab">Profile</a></li>
+            <li class="disabled"><a>Disabled</a></li>
+            <li class="dropdown">
+              <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Dropdown <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#dropdown1" data-toggle="tab">Action</a></li>
+                <li class="divider"></li>
+                <li><a href="#dropdown2" data-toggle="tab">Another Action</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade" id="home">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ornare odio, sed vulputate erat. Quisque sed consequat urna, non ultrices ante. Phasellus orci mi, consectetur at nulla sed, bibendum tristique purus. Proin dapibus metus eu elit tempor pretium. Mauris semper lorem et rhoncus elementum. Cras non dui eu nisl sodales sodales ac sit amet purus.</p>
+            </div>
+            <div class="tab-pane fade active in" id="profile">
+                <p>In a orci sit amet risus hendrerit ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus suscipit euismod nisi, sit amet placerat risus vestibulum eget. Curabitur eu erat justo. Morbi vel elit vulputate, rutrum odio eget, maximus leo. Phasellus in felis dictum, interdum metus quis, fermentum odio. Maecenas at luctus odio, in fermentum augue. Duis eget ipsum molestie, dapibus lectus porta, tempor leo.</p>
+            </div>
+            <div class="tab-pane fade" id="dropdown1">
+                <p>Aenean molestie in turpis sit amet ultrices. Maecenas euismod leo eget molestie congue. Aliquam ornare egestas ultricies. Suspendisse potenti. Duis tincidunt nulla semper, bibendum quam at, suscipit enim. Nullam vehicula lorem eget ex scelerisque semper. In hac habitasse platea dictumst. Ut quis velit tristique, pellentesque orci id, molestie felis. Integer porta faucibus sagittis. Ut maximus vitae tortor vel porttitor.</p>
+            </div>
+            <div class="tab-pane fade" id="dropdown2">
+                <p>Donec malesuada, est vitae fringilla rutrum, leo turpis maximus tortor, nec cursus risus lectus quis est. Nulla varius, diam eget laoreet pretium, lorem mi laoreet mauris, eget sollicitudin felis nulla et felis. Nam vitae orci nec nisi aliquet volutpat sit amet in lacus. Aenean vulputate tellus nec dolor ultricies fringilla in sit amet quam. Ut lobortis porta porttitor. Sed sit amet magna leo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h4 class="section-heading">Pills</h4>
+            <ul class="nav nav-pills">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Profile</a></li>
+              <li class="disabled"><a href="#">Disabled</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Dropdown <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <br>
+            <ul class="nav nav-pills nav-stacked">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Profile</a></li>
+              <li class="disabled"><a href="#">Disabled</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Dropdown <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another Action</a></li>
+                    <li><a href="#">Something Else Here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated Link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <br>
+            <ul class="nav nav-pills nav-justified">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Messages</a></li>
+            </ul>
+          </div>   
+          <div class="col-md-4">
+            <h4 class="section-heading">Pagination</h4>      
+            <ul class="pagination pagination-lg">
+              <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+              <li class="active"><a href="#" class="zoom-out">1 <span class="sr-only">(current)</span></a></li>
+              <li ><a href="#" class="zoom-out">2</a></li>
+              <li><a href="#" class="zoom-out">3</a></li>
+              <li><a href="#" class="zoom-out">4</a></li>
+              <li><a href="#" class="zoom-out">5</a></li>
+              <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+            </ul>          
+            <ul class="pagination">
+              <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+            </ul>
+            <ul class="pagination pagination-sm">
+              <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+            </ul>          
+            <ul class="pager">
+              <li class="previous"><a href="#"><span aria-hidden="true">&larr; </span>Previous</a></li>
+              <li class="next"><a href="#">Next<span aria-hidden="true"> &rarr;</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <!-- End Navs -->
+
+  <!-- Jumbotron -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h2>Jumbotron</h2>
+          </div>
+          <div class="jumbotron">
+              <h1>Hello, World!!</h1>
+              <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+     <!-- End Jumbotron -->
+
+    <!-- Breadcrumbs -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="page-header">
+            <h2>Breadcrumbs</h2>
+          </div>
+          <ol class="breadcrumb">
+            <li class="active">Home</li>
+          </ol>
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">Library</li>
+          </ol>
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li class="active">Data</li>
+          </ol>
+          <div>
+            <div class="page-header">
+              <h2>Badges</h2>
+             </div>
+            <div class="col-md-4 text-center"><a href="#">Inbox <span class="badge"> 42</span></a></div> 
+            <div class="col-md-4 text-center"><a href="#">Inbox <span class="badge btn-square"> 42</span></a></div> 
+            <div class="col-md-4 text-center"><a href="#">Inbox <span class="badge btn-special"> 42</span></a></div>
+            <br>
+            <div class="col-md-4" style="margin-top:10px;">
+              <button class="btn btn-primary btn-sm" type="button">
+              Messages <span class="badge btn-round">4</span>
+              </button>
+            </div>
+            <div class="col-md-4" style="margin-top:10px;">
+              <button class="btn btn-primary btn-sm" type="button">
+                Messages <span class="badge  btn-quard">4</span>
+              </button>
+            </div>
+            <div class="col-md-4" style="margin-top:10px;">
+              <button class="btn btn-primary btn-sm" type="button">
+                Messages <span class="badge btn-hexagonal">4</span>
+              </button>
+            </div>
+          </div>
+        </div> 
+        <!-- End Breadcrumbs N Badges -->
+
+        <!-- Labels -->
+        <div class="col-md-4 text-center">
+          <div class="page-header">
+            <h2>Labels</h2>
+          </div>
+          <h1>Heading H1 <span class="label label-default">Default</span></h1>
+          <h2>Heading H2 <span class="label label-primary">Primary</span></h2>
+          <h3>Heading H3 <span class="label label-success">Success</span></h3>
+          <h4>Heading H4 <span class="label label-info">Info</span></h4>
+          <h5>Heading H5 <span class="label label-warning">Warning</span></h5>
+          <h6>Heading H6 <span class="label label-danger">Danger</span></h6>
+          <span class="label label-default">Default</span>
+          <span class="label label-primary">Primary</span>
+          <span class="label label-success">Success</span>
+          <span class="label label-info">Info</span>
+          <span class="label label-warning">Warning</span>
+          <span class="label label-danger">Danger</span>
+        </div> 
+        <!-- End Labels --> 
+
+        <!-- Alerts -->
+        <div class="col-md-4 text-center">
+          <div class="page-header">
+            <h2>Alerts</h2>
+          </div>
+
+          <div class="alert alert-success" role="alert">Well done! You successfully read this Alert.</div>
+          <div class="alert alert-info" role="alert">Heads up! This <a href="#" class="alert-link">Alert </a>needs your attention.
+          </div>
+          <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Warning! System Error.
+          </div>
+          <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Oh snap! Enter Password and submit again.
+          </div>
+        </div> <!-- End Alerts -->
+      </div>
+    </div>
+  </div>  <!-- End Section -->
+
+    <!-- Thumbnails -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="page-header col-md-12">
+          <h2>Thumbnails</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail content-thumbnail">
+            <img alt="" src="images/12.jpg" alt="image">
+            <div class="caption">
+              <h4>Thumbnail label</h4>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-danger" href="#">Button</a> <a class="btn btn-info" href="#">Button</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail content-thumbnail">
+            <img alt="" src="images/12.jpg" alt="image">
+            <div class="caption">
+              <h4>Thumbnail label</h4>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-primary" href="#">Button</a> <a class="btn btn-danger" href="#">Button</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail content-thumbnail">
+            <img alt="" src="images/12.jpg" alt="image">
+            <div class="caption">
+              <h4>Thumbnail Image</h4>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <div class="btn-group"><a class="btn btn-primary" href="#">Button</a> <a class="btn btn-primary" href="#">Button</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> <!-- End Thumbnail -->
+
+   <!-- Footer -->
+  <div class="top-header">
+    <div class="container-fluid">            
+      <h5>&copy; 2016 Crown UI-KIT. | All Rights Reserve To Crown Technologies.</h5>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

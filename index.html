@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crown UI-KIT</title>
+    <meta name="description" content="Ray :: Bootstrap Skin">
+    <meta name="author" content="Media-City">
+    <link href="css/bootstrap.css" rel="stylesheet"> <!-- Bootstrap CSS--> 
+    <link href="css/project.css" rel="stylesheet"> <!-- Custom Bootstrap CSS-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" /> <!-- Font Awesome Css-->
+    <script src="js/jquery-latest.min.js"></script>   
+</head>
+<body>
+  <!-- Top Navbar -->
+  <nav id="nav-container" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Crown UI KIT</a>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">CSS</a></li>
+          <li><a href="components.html">Component</a></li>
+          <li><a href="javascripts.html">JavaScript</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Pages<span class="caret"></span></a>
+            <ul class="dropdown-menu">                       
+              <li><a href="landing.html">Landing Page</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="team.html">Our Team</a></li>            
+              <li role="separator" class="divider"></li>            
+              <li><a href="login.html">Login/Register</a></li>
+              <li><a href="contact.html">Contact Us</a></li>                
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>   
+  <!-- End Top Navbar -->
+
+  <!-- Top Header Bar -->
+  <div id="nav-container" class="top-header">
+    <div class="container-fluid">            
+      <h3>CSS</h3>
+    </div>
+  </div>  
+  <!-- End Top Header Bar-->
+
+  <!-- Typography -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h2>Typography</h2>
+          </div>
+          <div class="col-md-6">    <!-- Headings -->
+            <div class="section-box">
+              <div class="typo-section">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>                
+                <h3>Blockquote</h3>
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+          </div>
+        </div>   <!-- End Headings -->
+
+        <!-- Paragraph -->
+        <div class="col-md-6">
+          <div class="section-box">
+            <div class="typo-section">
+              <h3>Paragraph</h3>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus.</p>
+              <p class="lead">Lead Paragraph, To stand out a paragraph.</p>
+              <p>Maecenas sed diam eget,<strong> Duis mollis </strong>,<em>risus varius blandit sit </em>amet non magna. <s>est non commodo luctus</s>, nisi erat porttitor ligula, <u>eget lacinia odio sem nec elit.</u></p>
+              <p><small>This line of text is meant to be treated as fine print.</small></p>
+              <p class="text-left"><strong>Left aligned text:</strong> Maecenas sed diam eget</p>
+              <p class="text-center"><strong>Center aligned text:</strong> Maecenas sed diam eget</p>
+              <p class="text-right"><strong>Right aligned text:</strong> Maecenas sed diam eget</p>
+              <p class="text-justify"><strong>Justified text:</strong> Maecenas sed diam eget</p>
+              <p class="text-nowrap"><strong>No wrap text:</strong> Maecenas sed diam eget</p>
+            </div>
+          </div>
+        </div>  <!-- End Paragraph -->        
+      </div>
+     </div>
+    </div> 
+  </div>  
+    <!-- End Typography -->
+
+    <!-- Tables -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h2>Table</h2>
+          </div>
+        </div>
+        <div class="col-md-6">  
+          <!-- Basic Table -->
+          <div class="section-box">
+            <h4 class="section-box-title">Basic Table</h4>
+            <table class="table table-responsive">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>              
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>The Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Zebra Table -->
+          <div class="section-box">
+            <h4 class="section-box-title">Zebra Table</h4>          
+            <table class="table table-zebra table-responsive">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>              
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>The Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Bordered Hover Table -->
+          <div class="section-box">
+            <h4 class="section-box-title">Bordered Hover Table</h4>
+            <table class="table table-bordered table-hover table-responsive">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>              
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>The Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Laro</td>
+                  <td>The Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Larry</td>
+                  <td>The Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Larry</td>
+                  <td>The Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>  <!-- End Bordered Hover Table -->
+
+        <div class="col-md-6">
+          <!-- Emphasis Table -->
+          <div class="section-box">
+            <h4 class="section-box-title">Emphasis Table</h4>
+            <table class="table table-hover table-responsive">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>              
+              <tbody>
+                <tr class="active zoom-out">
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <tr class="zoom-out">
+                  <td>2</td>
+                  <td>Larry</td>
+                  <td>The Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr class="info zoom-out">
+                  <td>3</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr class="success zoom-out">
+                  <td>4</td>
+                  <td>Larry</td>
+                  <td>The Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr class="danger zoom-out">
+                  <td>5</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr class="warning zoom-out">
+                  <td>6</td>
+                  <td>Larry</td>
+                  <td>The Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> <!-- End Emphasis Table -->
+      </div>
+    </div>  
+  </div> 
+    <!-- End Table  -->
+
+    <!-- Forms -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="page-header col-md-12">
+          <h2>Forms</h2>
+        </div>  
+        <!-- Inline Form -->
+        <div class="col-md-12">
+          <div class="section-box">
+            <h4 class="section-box-title">Inline Form</h4> 
+              <form class="form-inline">
+                <div class="form-group">
+                  <label class="sr-only" for="InputEmail">Email Address</label>
+                  <input type="email" class="form-control" id="InputEmail" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="InputPassword">Password</label>
+                  <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember Me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign In</button>
+              </form>
+            </div>
+          </div>   
+          <!-- End Inline Form -->
+
+          <!-- Horizontal Signup Form -->
+          <div class="col-md-6">
+            <div class="section-box">
+              <h4 class="section-box-title">Sign Up Form</h4> 
+              <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="Name" class="col-md-2 control-label">Name</label>
+                    <div class="col-md-10">
+                      <input class="form-control" id="Name" placeholder="Name" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-md-2 control-label">Email</label>
+                    <div class="col-md-10">
+                      <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword" class="col-md-2 control-label">Password</label>
+                    <div class="col-md-10">
+                      <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="RetypePassword" class="col-md-2 control-label">Retype Password</label>
+                    <div class="col-md-10">
+                      <input class="form-control" id="ResetPassword" placeholder="Password" type="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-10 col-md-offset-2">
+                      <div class="checkbox">
+                          <label><input type="checkbox">I agree with the <a>Terms</a>.</label>
+                      </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-10 col-md-offset-2">
+                        <button type="reset" class="btn btn-default">Reset</button>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </div>
+                </div>
+              </form>
+            </div>
+          </div>  
+          <!-- End Signup Form -->
+
+          <!-- Login Form -->
+          <div class="col-md-6">
+            <div class="section-box">
+              <h4 class="section-box-title">Login Form</h4> 
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="inputEmail" class="col-md-2 control-label">Email</label>
+                  <div class="col-md-10">
+                    <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword" class="col-md-2 control-label">Password</label>
+                  <div class="col-md-10">
+                    <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-10 col-md-offset-2">
+                    <div class="checkbox">
+                        <label><input type="checkbox">Remember Me</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-9 col-md-offset-2">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <a><small>Forgot Password</small></a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>  <!-- End Login Form -->
+        </div>
+
+        <!-- Horizontal Form -->
+        <dic class="row">
+          <div class="col-md-6">
+            <div class="section-box">
+              <h4 class="section-box-title">Horizontal Form</h4> 
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="Name" class="col-md-2 control-label">Name</label>
+                  <div class="col-md-10">
+                    <input class="form-control" id="Name" placeholder="Name" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEmail" class="col-md-2 control-label">Email</label>
+                  <div class="col-md-10">
+                    <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword" class="col-md-2 control-label">Password</label>
+                  <div class="col-md-10">
+                    <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="textArea" class="col-md-2 control-label">Address</label>
+                  <div class="col-md-10">
+                      <textarea class="form-control" rows="3" id="textArea" placeholder="Textarea"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-2 control-label">Gender</label>
+                  <div class="col-md-10">
+                    <label class="radio-inline">
+                        <input name="optionsRadios" id="optionsRadios1" value="option1"
+                               checked="checked" type="radio"> Male
+                    </label>
+                    <label class="radio-inline">
+                        <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio"> Female
+                    </label>
+                  </div>
+                </div>                
+                <div class="form-group">
+                  <label for="select" class="col-md-2 control-label">Age</label>
+                  <div class="col-md-3">
+                    <select class="form-control" id="select">
+                      <option selected="selected">18</option>
+                      <option>19</option>
+                      <option>20</option>
+                      <option>21</option>
+                      <option>22</option>
+                    </select>
+                  </div>
+                </div>                        
+                <div class="form-group">
+                  <label for="select" class="col-md-2 control-label">Degree</label>
+                    <div class="col-md-5">
+                      <select multiple="multiple" class="form-control">
+                        <option selected="selected">B.Sc.</option>
+                        <option>M.Sc.</option>
+                        <option>B.Tech</option>
+                        <option>Phd</option>
+                        <option>M.phil</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-10 col-md-offset-2">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"><small>I Agree to the Terms and Conditions.</small>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-md-10 col-md-offset-2">
+                    <button type="reset" class="btn btn-default">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>   
+          <!-- End Horizontal Form -->
+
+          <!-- Form States -->
+          <div class="col-md-6">
+            <div class="section-box">
+              <h4 class="section-box-title">Form States</h4> 
+              <form class="form-section">
+                <div class="form-group">
+                    <label class="control-label" for="disabledInput">Disabled Default Input</label>
+                    <input class="form-control" id="disabledInput" placeholder="Disabled input here..."
+                           disabled="disabled" type="text">
+                </div>
+                <div class="form-group has-warning has-feedback">
+                    <label class="control-label" for="inputWarning">Large Input With Warning</label>
+                    <input class="form-control input-lg" id="inputWarning" aria-describedby="inputWarning2Status" type="text">
+                    <span class="fa fa-exclamation-triangle form-control-feedback" aria-hidden="true"></span>
+                     <span id="inputWarning2Status" class="sr-only">(warning)</span>
+                </div>
+                <div class="form-group has-error">
+                    <label class="control-label" for="inputError">Small Input With Error</label>
+                    <input class="form-control input-sm" id="inputError" type="text">
+                </div>
+                <div class="form-group has-success">
+                    <label class="control-label" for="inputSuccess">Input With Success</label>
+                    <input class="form-control" id="inputSuccess" type="text">
+                </div>
+                <div class="form-group">
+                  <label class="control-label">Input Addons</label>
+                  <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input class="form-control" type="text" Placeholder="Amount">
+                    <span class="input-group-btn">
+                      <button class="btn btn-primary" type="button">Transfer</button>
+                    </span>
+                  </div>
+              </div>
+              <div class="has-feedback">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="checkboxfeedback" value="option1">
+                    Feedback Checkbox 
+                  </label>
+                </div>
+              </div>
+               <div class="has-success">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="checkboxSuccess" value="option1">
+                    Checkbox with Success
+                  </label>
+                </div>
+              </div>
+              <div class="has-warning">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="checkboxWarning" value="option1">
+                    Checkbox with Warning
+                  </label>
+                </div>
+              </div>
+              <div class="has-error">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="checkboxError" value="option1">
+                    Checkbox with Error
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>  <!-- End Form States -->
+      </div> 
+    </div>  
+      <!-- End Form -->
+
+    <!-- Image Shapes -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="page-header col-md-12">
+          <h2>Image Shapes</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="images/c01.jpg" class="img-thumbnail img-responsive" alt="image">
+          <h4 class="text-center">Image Thumbnail</h4>
+        </div>
+        <div class="col-md-3">
+          <img src="images/c01.jpg" class="img-rounded img-responsive" alt="image">
+          <h4 class="text-center">Image Rounded</h4>
+        </div>
+        <div class="col-md-3">
+          <img src="images/c01.jpg" class="img-circle img-responsive" alt="image">
+          <h4 class="text-center">Image Circle</h4>
+        </div>
+        <div class="col-md-3">
+          <img src="images/c01.jpg" class="img-hexagonal img-responsive" alt="image">
+          <h4 class="text-center">Image Hexagonal</h4>
+        </div>
+      </div>
+    </div> 
+  </div> 
+  <!-- End Image Shapes -->
+ 
+  <!-- Helper Classes -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h2>Helper Classes</h2>
+          </div>
+          <div class="col-md-6">
+            <div class="section-component">
+              <p class="text-muted"><strong>Muted Text:</strong> Fusce dapibus, tellus ac cursus commodo  tellus ac.</p>
+              <p class="text-primary"><strong>Primary Text:</strong> Nullam id dolor id nibh ultricies vehicula id dolor id.</p>
+              <p class="text-success"><strong>Success Text:</strong> Nullam id dolor id nibh ultricies vehicula id nibh.</p>
+              <p class="text-info"><strong>Info Text:</strong> Maecenas sed diam eget risus varius blandit diam eget.</p>
+              <p class="text-warning"><strong>Warning Text:</strong> Etiam porta sem malesuada magna malesuada.</p>
+              <p class="text-danger"><strong>Danger Text:</strong> Donec ullamcorper nulla non metus malesuada.</p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <div class="section-component">
+              <p class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p class="bg-success">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p class="bg-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+              <p class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+              <p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> <!--  End Helper Classes -->
+
+  <!-- Grid System -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h2>Grid System</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grid-sys col-md-12"><h4>One Column</h4>col-md-12</div>
+      </div>
+      <div class="row">
+        <div class="grid-sys col-md-6"><h4>Two Column</h4>col-md-6</div>
+        <div class="grid-sys col-md-6"><h4>Two Column</h4>col-md-6</div>
+      </div>
+      <div class="row">
+        <div class="grid-sys col-md-4"><h4>Three Column</h4>col-md-4</div>
+        <div class="grid-sys col-md-4"><h4>Three Column</h4>col-md-4</div>
+        <div class="grid-sys col-md-4"><h4>Three Column</h4>col-md-4</div>
+      </div>
+      <div class="row">
+        <div class="grid-sys col-md-3"><h4>Fourth Column</h4>col-md-3</div>
+        <div class="grid-sys col-md-3"><h4>Fourth Column</h4>col-md-3</div>
+        <div class="grid-sys col-md-3"><h4>Fourth Column</h4>col-md-3</div>
+        <div class="grid-sys col-md-3"><h4>Fourth Column</h4>col-md-3</div>
+      </div>
+      <div class="row">
+        <div class="grid-sys col-md-2"><h4>Five Column</h4>col-md-2</div>
+        <div class="grid-sys col-md-2"><h4>Five Column</h4>col-md-2</div>
+        <div class="grid-sys col-md-2"><h4>Five Column</h4>col-md-2</div>
+        <div class="grid-sys col-md-2"><h4>Five Column</h4>col-md-2</div>
+        <div class="grid-sys col-md-2"><h4>Five Column</h4>col-md-2</div>
+        <div class="grid-sys col-md-2"><h4>Five Column</h4>col-md-2</div>
+      </div>
+      <div class="row">
+        <div class="grid-sys col-md-1"><h4>Six Col</h4>col-md-1</div>
+        <div class="grid-sys col-md-1"><h4>Six Col</h4>col-md-1</div>
+        <div class="grid-sys col-md-1"><h4>Six Col</h4>col-md-1</div>
+        <div class="grid-sys col-md-1"><h4>Six Col</h4>col-md-1</div>
+        <div class="grid-sys col-md-1"><h4>Six Col</h4>col-md-1</div>
+        <div class="grid-sys col-md-1"><h4>Six Col</h4>col-md-1</div>
+        <div class="grid-sys col-md-1"><h4>Six Col</h4>col-md-1</div>
+        <div class="grid-sys col-md-1"><h4>Six Col</h4>col-md-1</div>
+        <div class="grid-sys col-md-1"><h4>Six Col</h4>col-md-1</div>
+        <div class="grid-sys col-md-1"><h4>Six Col</h4>col-md-1</div>
+        <div class="grid-sys col-md-1"><h4>Six Col</h4>col-md-1</div>
+        <div class="grid-sys col-md-1"><h4>Six Col</h4>col-md-1</div>
+      </div>
+    </div>   
+  </div>  <!-- End Grid Coulmn -->
+
+  <!-- Footer -->
+  <div class="top-header">
+    <div class="container-fluid">            
+      <h5>&copy; 2016 Crown UI-KIT. | All Rights Reserve To Crown Technologies</h5>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crown UI-KIT</title>
+    <meta name="description" content="Ray :: Bootstrap Skin">
+    <meta name="author" content="Media-City">
+    <link href="css/bootstrap.css" rel="stylesheet"> <!-- Bootstrap CSS--> 
+    <link href="css/project.css" rel="stylesheet"> <!-- Custom Bootstrap CSS-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" /> <!-- Font Awesome Css-->
+    <script src="js/jquery-latest.min.js"></script> 
+    <script type="text/javascript">
+    $(function () {
+      $(document).bind('contextmenu', function (e) {
+        e.preventDefault();
+        alert('Right Click is Not Allowed');
+      });
+
+     });
+ 	</script> <!-- Right Click Disable JS -->
+ 	<script>
+ 	document.onkeydown = function(e) {
+    if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 ||     e.keyCode === 117 || e.keycode === 17 || e.keycode === 85)) {//ctrl+u Alt+c, Alt+v will also be disabled sadly.
+        alert('Not Allowed');
+    }
+    return false;
+	};
+	</script> <!-- Ctrl+U Disable JS -->
+  </head>
+<body>
+  <!-- Top Navbar -->
+  <nav id="nav-container" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Crown UI-KIT</a>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">CSS</a></li>
+          <li><a href="components.html">Component</a></li>
+          <li><a href="javascripts.html">JavaScript</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Pages<span class="caret"></span></a>
+            <ul class="dropdown-menu">                       
+              <li><a href="landing.html">Landing Page</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="team.html">Our Team</a></li>            
+              <li role="separator" class="divider"></li>            
+              <li><a href="login.html">Login/Register</a></li>
+              <li><a href="contact.html">Contact Us</a></li>                
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>   
+  <!-- End Top Navbar -->
+
+  <!-- Top Header Bar -->
+  <div id="nav-container" class="top-header">
+    <div class="container-fluid">            
+      <h3>JavaScript</h3>
+    </div>
+  </div> 
+  <!-- End -->
+
+  <!-- Bootstrap Slider  -->
+<div class="section-start">
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h2>Slider</h2>
+          </div>
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="images/1.jpg" alt="slider">
+                <div class="carousel-caption">
+                  <h2>Slider One</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/2.jpg" alt="slider">
+                <div class="carousel-caption">
+                  <h2>Slider two</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/3.jpg" alt="slider">
+                <div class="carousel-caption">
+                 <h2>Slider three</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                </div>
+              </div>              
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="fa fa-chevron-left fa-lg" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="fa fa-chevron-right fa-lg" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
+  <!-- End bootstrap Slider -->
+
+    <!-- Vertical Slider -->
+<div class="section-start">
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h2>Vertical Slider</h2>
+          </div>
+          <div id="myCarousel" class="carousel slide vertical" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="active item">
+                    <img src="images/6.jpg">
+                </div>
+                <div class="item">
+                    <img src="images/7.jpg">
+                </div>
+                <div class="item">
+                    <img src="images/8.jpg">
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="fa fa-chevron-left fa-lg" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="fa fa-chevron-right fa-lg" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a> 
+          </div>         
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+  <!-- End Vertical Slider -->
+ 
+    <!-- Owl Carousel Slider-->
+<div class="section-start">
+  <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h2>OWL Carousel Slider</h2>
+          </div>
+          <div id="owl-slider1" class="owl-carousel owl-theme"> 
+            <div class="item"><img src="images/1.jpg" alt="slider"></div>
+            <div class="item"><img src="images/2.jpg" alt="slider"></div>
+            <div class="item"><img src="images/3.jpg" alt="slider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- End Owl Carousel Slider -->
+
+  <!-- Owl Carousel -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+          <div class="page-header">
+            <h2>OWL Carousel</h2>
+          </div>
+          <div id="owl-slider2" class="owl-carousel">   
+              <div class="item"><img src="images/1.jpg" class="img-responsive" alt="slider"> </div>
+              <div class="item"><img src="images/2.jpg" class="img-responsive" alt="slider"></div>
+              <div class="item"><img src="images/3.jpg" class="img-responsive" alt="slider"></div>
+              <div class="item"><img src="images/4.jpg" class="img-responsive" alt="slider"></div>
+              <div class="item"><img src="images/5.jpg" class="img-responsive" alt="slider"></div>
+              <div class="item"><img src="images/6.jpg" class="img-responsive" alt="slider"></div>
+              <div class="item"><img src="images/7.jpg" class="img-responsive" alt="slider"></div>
+              <div class="item"><img src="images/8.jpg" class="img-responsive" alt="slider"></div>
+              <div class="item"><img src="images/9.jpg" class="img-responsive" alt="slider"></div>
+              <div class="item"><img src="images/10.jpg" class="img-responsive" alt="slider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>   
+  <!-- End Owl  Carousel -->
+
+  <!-- Modals -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <div class="page-header">
+            <h2>Modals</h2>
+          </div>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Launch Demo Modal
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Modal Title</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save Changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>   <!-- End Modals -->
+
+        <!-- Popover -->
+        <div class="col-md-4 text-center">
+          <div class="page-header">
+            <h2>Popover</h2>
+          </div>
+          <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Left
+          </button>
+          <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Top
+          </button>
+          <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Bottom
+          </button>
+          <button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Right
+          </button>
+        </div>   <!-- End Popover -->
+
+        <!-- Tooltips -->
+        <div class="col-md-4 text-center">
+          <div class="page-header">
+            <h2>Tooltips</h2>
+          </div>
+          <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Left</button>
+          <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Top</button>
+          <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Bottom</button>
+          <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Right</button>
+        </div>
+      </div>
+    </div>
+  </div>  <!-- End Tooltips -->
+
+  
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+      <!-- Collapse -->
+        <div class="col-md-6">
+          <div class="page-header">
+            <h2>Collapse</h2>
+          </div> 
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-primary">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Collapsible Group Item #1
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Collapsible Group Item #2
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Collapsible Group Item #3
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>   <!-- End Collapse -->
+
+        <!-- Wells -->
+        <div class="col-md-5 col-md-offset-1 text-center">
+          <div class="page-header">
+            <h2>Wells</h2>
+          </div> 
+          <div class="section-component">
+            <div class="well">
+              Look, I'm in a well!
+            </div>
+          </div>
+        
+          <div class="section-component">
+            <div class="well well-sm">
+              Look, I'm in a small well!
+            </div>
+          </div>
+
+          <div class="section-component">
+            <div class="well well-lg">
+              Look, I'm in a large well!
+            </div>
+          </div>
+        </div>   <!-- End Wells -->  
+      </div> 
+    </div>
+  </div> <!-- End Section -->
+  
+<!-- Footer -->
+<div class="top-header">
+  <div class="container-fluid">            
+    <h5>&copy; 2016 Crown UI-KIT. | All Rights Reserve To Crown Technologies.</h5>
+  </div>
+</div>
+<!-- End Footer -->
+
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+<script src="js/owl.carousel.js"></script>  <!-- OWL Carousel JS --> 
+<script src="js/skin.js"></script>   
+</body>
+
+</html>

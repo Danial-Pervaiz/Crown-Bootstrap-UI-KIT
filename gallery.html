@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crown UI-KIT</title>
+    <meta name="description" content="Ray :: Bootstrap Skin">
+    <meta name="author" content="Media-City">
+    <link href="css/bootstrap.css" rel="stylesheet"> <!-- Bootstrap CSS--> 
+    <link href="css/project.css" rel="stylesheet"> <!-- Custom Bootstrap CSS-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" /> <!-- Font Awesome Css-->
+    <script src="js/jquery-latest.min.js"></script>   
+    <script type="text/javascript">
+    $(function () {
+      $(document).bind('contextmenu', function (e) {
+        e.preventDefault();
+        alert('Right Click is Not Allowed');
+      });
+
+     });
+ 	</script> <!-- Right Click Disable JS -->
+ 	<script>
+ 	document.onkeydown = function(e) {
+    if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 ||     e.keyCode === 117 || e.keycode === 17 || e.keycode === 85)) {//ctrl+u Alt+c, Alt+v will also be disabled sadly.
+        alert('Not Allowed');
+    }
+    return false;
+	};
+	</script> <!-- Ctrl+U Disable JS -->
+  </head>
+<body>
+  <!-- Top Navbar -->
+  <nav id="nav-container" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Crown UI KIT</a>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">CSS</a></li>
+          <li><a href="components.html">Component</a></li>
+          <li><a href="javascripts.html">JavaScript</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Pages<span class="caret"></span></a>
+            <ul class="dropdown-menu">                       
+              <li><a href="landing.html">Landing Page</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="team.html">Our Team</a></li>            
+              <li role="separator" class="divider"></li>            
+              <li><a href="login.html">Login/Register</a></li>
+              <li><a href="contact.html">Contact Us</a></li>                
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>   
+  <!-- End Top Navbar -->
+
+  <!-- Top Header Bar -->
+  <div class="top-header">
+    <div id="nav-container" class="container-fluid">            
+      <h3>Gallery Page</h3>
+    </div>
+  </div> <!-- End -->
+
+  <!-- Gallery -->
+  <div class="section-start">
+    <div class="container">
+      <div class="row">
+        <div class="gallery col-md-12"> 
+          <h3 class="section-heading">Gallery Style : 1</h3>          
+          <div class="gallery-img-section">
+            <div class="gall col-md-3"><div class="gallery-img"><img src="images/1.jpg" class="img-responsive" alt="image"></div></div>
+            <div class="gall col-md-3"><div class="gallery-img"><img src="images/2.jpg" class="img-responsive" alt="image"></div></div>
+            <div class="gall col-md-3"><div class="gallery-img"><img src="images/3.jpg" class="img-responsive" alt="image"></div></div>
+            <div class="gall col-md-3"><div class="gallery-img"><img src="images/4.jpg" class="img-responsive" alt="image"></div></div>
+            <div class="gall col-md-3"><div class="gallery-img"><img src="images/9.jpg" class="img-responsive" alt="image"></div></div>
+            <div class="gall col-md-3"><div class="gallery-img"><img src="images/6.jpg" class="img-responsive" alt="image"></div></div>
+            <div class="gall col-md-3"><div class="gallery-img"><img src="images/7.jpg" class="img-responsive" alt="image"></div></div>
+            <div class="gall col-md-3"><div class="gallery-img"><img src="images/8.jpg" class="img-responsive" alt="image"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!-- End Style 1 -->
+
+  <!-- Gallery Style 2 -->
+  <div class="section-start">
+    <div class="back-image" style="background-color:#111;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">            
+            <h3 class="section-heading">Gallery Style : 2</h3>            
+            <div class="gallery-img-section">
+              <div class="col-md-4">
+                 <div class="tilt thumbnail">
+                  <img src="images/1.jpg" class="img-responsive" alt="image">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="tilt thumbnail">
+                  <img src="images/3.jpg" class="img-responsive" alt="image">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="tilt thumbnail">
+                  <img src="images/2.jpg" class="img-responsive" alt="image">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="tilt thumbnail">
+                  <img src="images/8.jpg" class="img-responsive" alt="image">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="tilt thumbnail">
+                  <img src="images/7.jpg" class="img-responsive" alt="image">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="tilt thumbnail">
+                  <img src="images/6.jpg" class="img-responsive" alt="image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Style 2 -->
+
+  <!-- Gallery Style 3 -->
+  <div class="section-start">
+    <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"> 
+            <h3 class="section-heading">Gallery Style : 3</h3>          
+            <div class="gallery-img-section">
+              <div class="col-md-12">
+                <div class="gall col-md-3">
+                <div class="gray-effect">
+                  <img src="images/1.jpg" class="img-thumbnail img-responsive" alt="image">
+                </div>
+              </div>
+              <div class="gall col-md-3">
+                <div class="gray-effect">
+                  <img src="images/2.jpg" class="img-thumbnail img-responsive" alt="image">
+                </div>
+              </div>
+              <div class="gall col-md-3">
+                <div class="gray-effect">
+                  <img src="images/3.jpg" class="img-thumbnail img-responsive" alt="image">
+                </div>
+              </div>
+              <div class="gall col-md-3">
+                <div class="gray-effect">
+                  <img src="images/4.jpg" class="img-thumbnail img-responsive" alt="image">
+                </div>
+              </div></div>
+              <div class="col-md-12">
+                <div class="gall col-md-3">
+                   <div class="gray-effect">
+                    <img src="images/5.jpg" class="img-thumbnail img-responsive" alt="image">
+                    <img src="images/6.jpg" class="img-thumbnail img-responsive" alt="image">
+                  </div>
+                </div>
+                <div class="gall g-padding col-md-6">
+                  <div class="gray-effect">
+                    <img src="images/7.jpg" class=" img-thumbnail img-responsive" alt="image">
+                  </div>
+                </div>
+                <div class="gall col-md-3">
+                  <div class="gray-effect">
+                    <img src="images/8.jpg" class="img-thumbnail img-responsive">
+                    <img src="images/1.jpg" class="img-thumbnail img-responsive" alt="image">
+                  </div>
+                </div></div><div class="col-md-12">
+                <div class="gall col-md-3">
+                  <div class="gray-effect">
+                    <img src="images/9.jpg" class="img-thumbnail img-responsive" alt="image">
+                  </div>
+                </div>
+                <div class="gall col-md-3">
+                  <div class="gray-effect">
+                    <img src="images/10.jpg" class="img-thumbnail img-responsive" alt="image">
+                  </div>
+                </div>
+                <div class="gall col-md-3">
+                  <div class="gray-effect">
+                    <img src="images/11.jpg" class="img-thumbnail img-responsive" alt="image">
+                  </div>
+                </div>
+                <div class="gall col-md-3"> 
+                  <div class="gray-effect">
+                    <img src="images/12.jpg" class="img-thumbnail img-responsive" alt="image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  End -->
+
+  <!-- Footer -->
+  <div class="top-header">
+    <div class="container-fluid">            
+      <h5>&copy; 2016 Crown UI-KIT. | All Rights Reserve To Crown Technologies.</h5>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
